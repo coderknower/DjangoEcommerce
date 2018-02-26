@@ -2,6 +2,7 @@ from django import forms
 
 
 class ContactForms(forms.Form):
+
     fullname = forms.CharField(
             widget=forms.TextInput(
                     attrs={
@@ -10,7 +11,8 @@ class ContactForms(forms.Form):
                     }
                     )
             )
-    email    = forms.EmailField(
+
+    email = forms.EmailField(
             widget=forms.EmailInput(
                     attrs={
                         "class": "form-control",
@@ -18,7 +20,9 @@ class ContactForms(forms.Form):
                     }
                     )
             )
-    content  = forms.CharField(
+
+
+    content = forms.CharField(
             widget=forms.Textarea(
                 attrs={
                     'class': 'form-control',
@@ -36,3 +40,10 @@ class ContactForms(forms.Form):
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+
+class RegisterForm(forms.Form):
+    username = forms.CharField()
+    email    = forms.EmailField()
+    password = forms.CharField(widget=forms.PasswordInput)
+    password2 = forms.CharField(label='Confirm Password', widget=forms.PasswordInput)
