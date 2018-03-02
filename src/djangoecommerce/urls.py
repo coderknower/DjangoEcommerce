@@ -18,7 +18,13 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
-from products.views import ProductListViewClass, product_list_view_function, ProductDetailViewClass, product_detail_view_function
+from products.views import (ProductListViewClass,
+                            product_list_view_function,
+                            ProductDetailViewClass,
+                            product_detail_view_function,
+                            ProductFeaturedListView,
+                            ProductFeaturedDetailView,
+)
 from .views import home_page,about_page,contact_page,login_page, register_page
 
 urlpatterns = [
@@ -28,6 +34,8 @@ urlpatterns = [
     url(r'^register/', register_page),
     url(r'^about/', about_page),
     url(r'^contact/', contact_page),
+    url(r'^featured/$', ProductFeaturedListView.as_view()),
+    url(r'^featured/(?P<pk>\d+)/$', ProductFeaturedDetailView.as_view()),
     url(r'^products/$', ProductListViewClass.as_view()),
     url(r'^productsfbv/$', product_list_view_function),
     url(r'^products/(?P<pk>\d+)/$', ProductDetailViewClass.as_view()),
