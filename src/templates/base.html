@@ -2,9 +2,18 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+    {% include "base/css.html" %}
+</head>
 <body>
-
-
+<style>
+body {
+        color: black;
+}
+</style>
+{% include "base/navbar.html" %}
 {% block content %} {% endblock %}
+{% include "base/js.html" %}
+
 </body>
 </html>

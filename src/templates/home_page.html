@@ -10,7 +10,9 @@
 
 <link rel='stylesheet' href='{% static "css/main.css" %}' >
 <img src="{% static 'img/tarzan.png' %}" class='img-fluid' />
-
+{% block linkwala %}
+<link rel='stylesheet' href='{% static "css/main.css" %}' >
+{% endblock linkwala %}
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 
@@ -21,20 +23,3 @@
 
 
 
-<!DOCTYPE html>
-<html>
-<body>
-
-{{start}}
-
-{% load static %}
-<link rel='stylesheet' href='{% static "css/main.css" %}' >
-<img src="{% static 'img/tarzan.png' %}" class='img-fluid' />
-
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-{{premium_content}}
-
-</body>
-</html>

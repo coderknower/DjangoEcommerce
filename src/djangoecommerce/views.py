@@ -8,7 +8,6 @@ from .forms import ContactForms, LoginForm, RegisterForm
 def home_page(request):
     context={
         "start" : "You have just learnt about contexts.",
-
     }
     if request.user.is_authenticated:
         context["premium_content"]="You are seeing the premium content."
@@ -71,8 +70,6 @@ def register_page(request):
         print(new_user)
 
     return render(request, "auth/register.html", context)
-
-
 
 
 
