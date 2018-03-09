@@ -22,6 +22,7 @@ def about_page(request):
 def contact_page(request):
     contact_form= ContactForms()
     context={
+        "title": "Contact",
         "start":"We will make form here and yeah you are awesome.",
         "form": contact_form
     }

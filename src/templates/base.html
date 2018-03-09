@@ -1,19 +1,19 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
-<head>
-    {% include "base/css.html" %}
-</head>
-<body>
-<style>
-body {
-        color: black;
-}
-</style>
-{% include "base/navbar.html" %}
-{% block content %} {% endblock %}
-{% include "base/js.html" %}
+    <html>
+    <head>
+        {% include "base/css.html" %}
+    </head>
+    <body>
+        <style>
+        body {
+                color: black;
+        }
+        </style>
+        {% include "base/navbar.html" with brand_name="eCommerce" %}
+        {% block content %} {% endblock %}
+        {% include "base/js.html" %}
 
-</body>
+    </body>
 </html>
