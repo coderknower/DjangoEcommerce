@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 from django.views.generic import TemplateView
 from django.urls import reverse
 
+from carts.views import cart_home
+
 from products.views import (ProductListViewClass,
                             product_list_view_function,
                             ProductDetailViewClass,
@@ -37,8 +39,10 @@ urlpatterns = [
     url(r'^login/', login_page, name='login'),
     url(r'^register/', register_page, name='register'),
     url(r'^about/', about_page, name='about'),
+    url(r'^cart/', cart_home, name='cart'),
     url(r'^contact/', contact_page, name='contact'),
     url(r'^products/', include("products.urls", namespace='products')),
+    url(r'^search/', include("search.urls", namespace='search')),
     url(r'^bootstrap/', TemplateView.as_view(template_name='bootstrap/example.html')),
 
     #url(r'^featured/$', ProductFeaturedListView.as_view()),
