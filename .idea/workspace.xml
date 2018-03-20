@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="effe46fb-15fa-41f8-9c86-aed7b93cf7ad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/djangoecommerce/settings.py" afterPath="$PROJECT_DIR$/src/djangoecommerce/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/djangoecommerce/urls.py" afterPath="$PROJECT_DIR$/src/djangoecommerce/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/djangoecommerce/views.py" afterPath="$PROJECT_DIR$/src/djangoecommerce/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/products/models.py" afterPath="$PROJECT_DIR$/src/products/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/products/templates/bootstrap/example.html" afterPath="$PROJECT_DIR$/src/products/templates/bootstrap/example.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/auth/login.html" afterPath="$PROJECT_DIR$/src/templates/auth/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/auth/register.html" afterPath="$PROJECT_DIR$/src/templates/auth/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base/navbar.html" afterPath="$PROJECT_DIR$/src/templates/base/navbar.html" />
-    </list>
+    <list default="true" id="effe46fb-15fa-41f8-9c86-aed7b93cf7ad" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -479,8 +467,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
