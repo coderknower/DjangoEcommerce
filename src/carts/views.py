@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from products.model import Product
+from products.models.py import Product
 
 from .models import Cart
 
@@ -20,3 +20,4 @@ def cart_update(request):
     cart_obj, new_obj = Cart.objects.new_or_get(request)
     cart_obj.products.add(product_obj)
     return redirect(product_obj.get_absolute_url())
+    

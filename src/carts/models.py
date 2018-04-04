@@ -1,9 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.db.models.signals import pre_save, post_save, m2m_changed
-
 from products.models import Product
-
 
 User = settings.AUTH_USER_MODEL
 
